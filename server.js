@@ -10,13 +10,14 @@ var rollbar = new Rollbar({
 
 app.use(express.json());
 
-app.get('/', function(req, res){
-    rollbar.log("Hello world!");
+function students(){
     
+}
+
+app.get('/', function(req, res){
+    rollbar.log("Hello Avery");
     res.sendFile(path.join(__dirname, '/public/index.html'))
 });
-
-
 
 
 
